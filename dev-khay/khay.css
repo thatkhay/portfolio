@@ -1,0 +1,297 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 20px;
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+.small{
+    border: 2px rgb(152, 207, 221) solid ;
+    width: 45%;
+    height: 1200px;
+   z-index: 1;
+   background-color: rgb(250, 246, 246);
+   border-radius: 3rem;
+   margin-left: 2%;
+background-position: center center;
+color: rgb(12, 12, 12);
+   
+}
+
+.big{
+    background-color: rgb(216, 214, 214);
+    width: 55%;
+    height: 1500px;
+    text-align: center;
+    z-index: 2;
+  margin-left: 40%;
+  position: absolute;
+  background-color: rgb(195, 211, 247);
+  border-radius: 3rem;
+background-position: center center;
+color: rgb(31, 30, 30);
+    
+}
+body{
+    display: flex;
+    align-items: center;  
+    height: 1600px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+justify-content: space-between;
+padding-top: 1rem;
+list-style: none;
+}
+.realnav{
+    width: 70%;
+    display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.main{
+
+    height: 50%;
+    
+}
+h1{
+    text-align: center;
+    text-transform: capitalize;
+    font-style: italic;
+    font-size: 2rem;
+}
+.reachme{   
+    height: 15%;  
+    
+}
+h4, p , h3{
+    text-align: left;
+    margin-left: 0.7rem;
+
+}
+.socials{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+margin-top: 3rem;
+}
+.img{
+    width: 40%;
+    border-radius: 26%; 
+}
+
+@keyframes img{
+    0%{
+        transform: translateY(4px);
+    }
+
+    100%{
+        transform: translateY( 0px);
+    }
+}
+
+.img{
+    animation-name: img;
+    animation-iteration-count:1;
+    animation-duration: 4000ms;
+    animation-timing-function: steps(3, end);
+    animation-play-state: running;
+    }
+
+
+.lastdiv{
+margin-top: 2.5rem;
+}
+
+.div1{
+    text-align: center;
+    
+}
+
+.topbutton, button{
+    height: 3rem;
+    width: 6rem;
+background-color: rgb(199, 198, 198);
+border-radius: 40%;
+border-color: black;
+}
+.topbutton:hover button:hover{    
+background-color: rgb(235, 229, 229);
+transform: skewX(10deg);
+color: rgb(58, 5, 5);
+font-style: italic;
+font-weight: 800;
+
+}
+.topbutton:active, button:active{    
+    background-color: rgb(235, 229, 229);
+    transform: skew(-10deg);
+    color: rgb(58, 5, 5);
+    font-style: italic;
+    font-weight: 800;
+    
+    }
+.mainimg{
+   border: 4px solid rgb(153, 151, 151) ;
+border-radius: 50%;
+height: 12rem;
+width: 12rem;
+
+
+
+}
+h5{
+text-transform: capitalize;
+text-align: left;
+margin-left: 0.5rem;
+font-weight: 600;
+padding-top: 1rem;
+}
+.service{
+font-weight: 500;
+font-size: 1.2rem;
+}    
+h2{
+   margin-left: 1rem; 
+   text-decoration: underline;
+}
+
+h3, h5, h4 {
+margin-left: 3rem ;
+}
+p{
+    margin-left: 2rem ;
+}
+.leftbig{
+height: 80%;
+margin-top: 4rem;
+}
+section{
+height: 33.33%;
+}
+.svg{
+height: 10rem;
+width: 70%;
+text-align: center;
+border: 3px solid rgb(255, 254, 254);
+border-radius: 9px;
+}
+.topbutton{
+height: 2rem;
+width: 100%;
+border-radius: 0.3rem;
+margin-right: 1.5rem;
+}
+.topbutton:hover{    
+    background-color: rgb(184, 123, 123);
+   height: 2.5rem;
+    width: 100%;
+    color: rgb(238, 233, 233);
+    font-style: italic;
+    font-weight: 600;
+    }
+    .topbclass{
+        margin-right: 0.5rem; 
+    }
+
+    .logo{
+        height: 3.5rem;
+         width: 3.5rem;
+         border: 1px solid black;
+         border-radius: 40%;
+        
+    }
+
+    @keyframes mainimg{
+        0%{
+            transform: translateX(4px);
+        }
+    
+        100%{
+            transform: translateX( 0px);
+        }
+    }
+    
+    .mainimg{
+        animation-name: mainimg;
+        animation-iteration-count:1;
+        animation-duration: 4000ms;
+        animation-timing-function: steps(2, end);
+        animation-play-state: running;
+        animation-direction: alternate;
+        }
+
+    @keyframes buti{
+        0%{
+            transform: rotate(-18deg);
+        }
+    
+        100%{
+            transform: rotate( 0deg);
+        }
+    }
+
+    .logo{
+        animation-name: buti;
+        animation-iteration-count:2;
+        animation-duration: 5000ms;
+        animation-timing-function: steps(5, end);
+        animation-play-state: running;
+        animation-direction: alternate;
+        }
+
+
+@media screen and (max-width:850px) {
+   .realnav{
+    display: none;
+   } 
+   html{
+    font-size: 16px;
+   }
+
+body{
+    height: 2500px;
+    display:flex;
+    text-align: center;
+    flex-direction: column-reverse;
+}
+.small,.big{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 ;
+    position:inherit;
+    border-radius: 1rem;
+    height: 1500px;
+margin: 0;
+padding: 0;
+}
+
+.cont{
+margin-top: 1rem;
+}
+
+h3{
+margin-top: -2.5rem;
+  }
+    
+h1{
+    font-size: 2rem; 
+
+  }
+  .reachme{
+      margin-top: 5rem;
+  }
+  
+  .small{
+      margin-bottom: 5rem;
+  }
+  
+
+}
+
+
+
+
+
