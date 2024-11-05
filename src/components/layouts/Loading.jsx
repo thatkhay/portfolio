@@ -182,7 +182,7 @@ const Loading = () => {
     <LoadSection>
       <section className="loadWrapper">
         <div className="loadBoxContainer">
-          <p className="nameInitial">D</p>
+          <p className="nameInitial">K</p>
           <div className="loadingImg">
             <div className="vector-left"></div>
             <div className="vector-top"></div>
