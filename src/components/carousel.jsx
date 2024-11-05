@@ -77,7 +77,7 @@ const Slider = ({ projects }) => {
               <h3>{project.title}</h3>
               <p>{project.description}</p>
               <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-blue-500 underline hover:text-blue-700">
-                {project.link}
+               visit live link
               </a>
             </div>
           </div>
