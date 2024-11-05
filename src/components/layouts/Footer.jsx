@@ -10,10 +10,10 @@ const Footer = ({ classname }) => {
       <div className="horizontalLine"></div>
       <div className="contactAddresses">
         <section className="copyRight">
-          <p className="myInfo">&copy; David Aniebo {footerYear} </p>
+          <p className="myInfo">&copy; Dev-khay {footerYear} </p>
           <p className="myInfo myRole">Software Engineer</p>
-          <a className="myEmail" href="mailto:aniebovictor001@gmail.com">
-            aniebovictor001@gmail.com
+          <a className="myEmail" href="mailto:johnkingsleyegeonu@gmail.com">
+            johnkingsleyegeonu@gmail.com
           </a>
         </section>
 
