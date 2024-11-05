@@ -1,14 +1,9 @@
-import React, { useContext } from "react"
 import BgText from "../components/shared/BgText"
-import ProjectItem from "../components/shared/ProjectItem"
 import Footer from "../components/layouts/Footer"
-import PortfolioContext from "../context/portfolio/PortfolioContext"
 import { ProjectSection } from "../styles/HomeStyle"
-import CardSkeleton from "../components/shared/CardSkeleton"
 import { MyWorks } from "../styles/WorkStyle"
 
 const Works = () => {
-  const { projects } = useContext(PortfolioContext)
 
   return (
     <MyWorks>
@@ -33,23 +28,7 @@ const Works = () => {
             </div>
           </div>
           <section className="myProject myproject-works">
-            {projects.length === undefined ? (
-              <CardSkeleton cards={9} />
-            ) : (
-              projects.map((project, index) => {
-                return (
-                  <ProjectItem
-                    key={index}
-                    project={project.fields}
-                    projectImg={project.fields.avatar.fields.file.url}
-                    title={project.fields.title}
-                    description={project.fields.description}
-                    projectRepo={project.fields.repoLink}
-                    projectDemo={project.fields.liveLink}
-                  />
-                )
-              })
-            )}
+          
           </section>
         </ProjectSection>
       </section>

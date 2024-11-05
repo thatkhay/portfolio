@@ -16,9 +16,55 @@ import {
   ContactSection,
 } from "../styles/HomeStyle"
 import Socials from "../components/shared/Socials"
-import Carousel from "../components/carousel/Carousel"
 import { useNavigate } from "react-router-dom"
 import emailjs from "@emailjs/browser"
+import Carousel from "../components/carousel"
+import aci from '../images/aci-holdings.png'
+import fleetLink from '../images/fleetlink.png'
+import fleetLinkDash from '../images/fleet-link-dash.png'
+import shopCo from '../images/shopco.png'
+import aibrid from '../images/aibrid.png'
+import shopin from '../images/shop.png'
+
+
+const projects = [
+  {
+    title: 'Aci-holdings',
+    description: "Website for ACI Holdings, a company specializing in innovative solutions for the oil and agricultural industries.",
+    imageUrl: aci,
+    link: 'https://aciholdings.netlify.app/'
+  },
+  {
+    title: 'ShopCO',
+    description: "Interactive e-commerce site with seamless navigation, responsive design, and engagement.",
+    imageUrl: shopCo,
+    link: 'https://shopco.azurewebsites.net/'
+  },
+  {
+    title: 'Feet Link',
+    description: ' Streamlined vehicle tracking, real-time insights, and efficient fleet management solutions in one centralized platform',
+    imageUrl: fleetLink,
+    link: 'https://fleetmanager.tech/'
+  },
+  {
+    title: 'Feet Link Dashboard',
+    description: 'A comprehensive interface for monitoring vehicle performance, managing routes, and optimizing fleet operations with real-time analytics and user-friendly navigation',
+    imageUrl: fleetLinkDash,
+    link: 'https://fleetmanager.live/en'
+  },
+  {
+    title: 'Aibrid',
+    description: "User-friendly booking site for DJ Aibrid's events and performances.",
+    imageUrl: aibrid,
+    link: 'https://aibrid2.vercel.app/'
+  },
+  {
+    title: 'ShopVista',
+    description: "Dynamic shopping cart that enhances user experience with interactive features.",
+    imageUrl: shopin,
+    link: 'https://shop-vista-puce.vercel.app/'
+  }
+];
 
 const Home = () => {
   // contact me using Emailjs
@@ -60,7 +106,7 @@ const Home = () => {
   // Navigate to google drive
   const navigate = useNavigate()
   const url =
-    "https://docs.google.com/document/d/1nk9_l6_xdMRfPElEueXrXM2nIyoQnKMdDH1kAfP0Es0/edit?usp=sharing"
+    "https://docs.google.com/document/d/e/2PACX-1vQ-XzGXGK4rCPZC07bvld98bH7UT7RiwG3lCLKKpcoQnynqeBq0SiQoterfYXT0_6xmv85Eag7HiMH4/pub"
 
   // Route to my About page
   const handleClick = () => {
@@ -87,13 +133,13 @@ const Home = () => {
         <section className="myNameContainer">
           <div className="aboutAniebo">
             <div className="fullName">
-               <div className="xbox xbox1" data-char=" John-Kingsley">
-                 John-Kingsley<div className="inside">  John-Kingsley</div>
+              <div className="xbox xbox1" data-char=" John-Kingsley">
+                John-Kingsley<div className="inside">  John-Kingsley</div>
               </div>
               <div className="xbox" data-char="Egeonu">
                 Egeonu<div className="inside">Egeonu</div>
               </div>
-             
+
             </div>
             <Skills classNames="skillSection" />
           </div>
@@ -117,20 +163,15 @@ const Home = () => {
               <section className="aboutAniebo1">
                 <div className="aboutText">
                   <p>
-                    I am a Software Engineer with skills in MongoDB, ExpressJS,
-                    ReactJS, NextJs and NodeJS (MERN Stack), passionate about
-                    developing clean, intuitive interfaces and adding my bit to
-                    the world of web development.
+                    I'm a Software Engineer proficient in the MERN stack (MongoDB, ExpressJS, ReactJS, and NodeJS). I’m passionate about creating clean, user-focused interfaces and making meaningful contributions to the web development field.
                   </p>
                   <p className="aboutText2">
-                    When I am not knee-deep into programming, I can be found
-                    reading playing games or going for a walk with my dogs.
+                    Beyond coding, I love reading, gaming, and walking my dogs.
                   </p>
                   <p>
-                    I am open to freelance and full-time positions in an
-                    environment which presents fun challenges with provision for
-                    constant growth.
+                    I’m open to both freelance and full-time roles in settings that encourage growth and provide engaging challenges.
                   </p>
+
                   <Button
                     text={"Download Resume"}
                     classname="downloadResumeButton"
@@ -204,7 +245,7 @@ const Home = () => {
                 </div>
               </div>
               <section className="myProject">
-                <Carousel initialIndex={4} />
+                <Carousel projects={projects} />
               </section>
             </ProjectSection>
           </section>
@@ -251,26 +292,21 @@ const Home = () => {
                   </section>
                   <div className="contactLocations">
                     <Socials
-                      mediaLink="https://www.linkedin.com/in/david-aniebo/"
+                      mediaLink="https://www.linkedin.com/in/john-kingsley-egeonu-a6225b255/"
                       myHandle="Linkedin"
                       classname="myLinkedin"
                     />
                     <Socials
-                      mediaLink="https://twitter.com/Webmekanic_"
+                      mediaLink="https://twitter.com/that_khay"
                       myHandle="#Twitter"
                       classname="myTwitter"
                     />
                     <Socials
-                      mediaLink="https://github.com/Webmekanic"
+                      mediaLink="https://github.com/thatkhay"
                       myHandle="GitHub"
                       classname="myGitHub"
                     />
-                    <Socials
-                      mediaLink="https://www.codewars.com/users/webmekanic"
-                      myHandle="Codewars"
-                      classname="myCodewars"
-                      handleClick={sendEmail}
-                    />
+
                   </div>
                 </section>
                 <Button text={"send"} className="contactBtn" />

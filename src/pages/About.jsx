@@ -13,7 +13,7 @@ import styled from "styled-components"
 const About = () => {
   // Link to resume on google drive
   const url =
-    "https://drive.google.com/file/d/1DSBBj4rwJqRkyRokKVfH29DTWd3QRsYd/view?usp=sharing"
+    "https://docs.google.com/document/d/e/2PACX-1vQ-XzGXGK4rCPZC07bvld98bH7UT7RiwG3lCLKKpcoQnynqeBq0SiQoterfYXT0_6xmv85Eag7HiMH4/pub"
 
   const downloadResume = () => {
     window.open(url, "_blank")
@@ -40,20 +40,15 @@ const About = () => {
             <section className="aboutAniebo1">
               <div className="aboutText">
                 <p>
-                  I am a Software Engineer with skills in MongoDB, ExpressJS,
-                  ReactJS, and NodeJS (MERN Stack), passionate about developing
-                  clean, intuitive interfaces and adding my bit to the world of
-                  web development.
+                  I am a Software Engineer skilled in MongoDB, ExpressJS, ReactJS, and NodeJS (MERN Stack). I have a strong passion for building clean, user-friendly interfaces and contributing to the world of web development.
                 </p>
                 <p className="aboutText2">
-                  When I am not knee-deep into programming, I can be found
-                  reading playing games or going for a walk with my dogs.
+                  Outside of programming, I enjoy reading, playing games, and taking walks with my dogs.
                 </p>
                 <p>
-                  I am open to freelance and full-time positions in an
-                  environment which presents fun challenges with provision for
-                  constant growth.
+                  I am open to freelance and full-time opportunities in environments that offer engaging challenges and continuous growth.
                 </p>
+
                 <Button
                   text={"Download Resume"}
                   classname="downloadResumeButton"

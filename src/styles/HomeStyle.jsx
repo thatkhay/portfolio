@@ -137,6 +137,7 @@ export const MyHome = styled.div`
     display: flex;
     grid-gap: 0.9rem;
     margin-top: 35.2px;
+    flex-direction: column;
   }
   .xbox .inside {
     font-size: 3.5rem;

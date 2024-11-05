@@ -3,7 +3,7 @@ import { MyLink, Nav } from "../../styles/NavStyle"
 import { FiGithub, FiLinkedin } from "react-icons/fi"
 import { CgSortAz } from "react-icons/cg"
 import PortfolioContext from "../../context/portfolio/PortfolioContext"
-import Kkkkkk from "./assets/myLogo.svg"
+import Kkkkkk from "./assets/my-emoji.png"
 import { NavLink } from "react-router-dom"
 
 const Navbar = () => {
@@ -47,14 +47,14 @@ const Navbar = () => {
       <div className="socialIcons">
         <a
           className="socialLink"
-          href="https://github.com/Webmekanic"
+          href="https://github.com/thatkhay"
           target="_blank"
           rel="noreferrer"
         >
           <FiGithub />
         </a>
         <a
-          href="https://www.linkedin.com/in/david-aniebo/"
+          href="https://www.linkedin.com/in/john-kingsley-egeonu-a6225b255/"
           target="_blank"
           rel="noreferrer"
           className="socialLink"

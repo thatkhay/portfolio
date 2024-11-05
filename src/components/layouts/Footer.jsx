@@ -21,14 +21,14 @@ const Footer = ({ classname }) => {
         <div className="socialIcons">
           <a
             className="socialLink"
-            href="https://github.com/Webmekanic"
+            href="https://github.com/thatkhay"
             target="_blank"
             rel="noreferrer"
           >
             <FiGithub />
           </a>
           <a
-            href="https://www.linkedin.com/in/david-aniebo/"
+            href="https://www.linkedin.com/in/john-kingsley-egeonu-a6225b255/"
             target="_blank"
             rel="noreferrer"
             className="socialLink"
@@ -36,7 +36,7 @@ const Footer = ({ classname }) => {
             <FiLinkedin />
           </a>
           <a
-            href="https://twitter.com/Webmekanic_"
+            href="https://twitter.com/that_khayy"
             target="_blank"
             rel="noreferrer"
             className="socialLink"
